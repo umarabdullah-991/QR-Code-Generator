@@ -5,3 +5,35 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(195, 0, 255);
+}
+.wrapper{
+    background-color: #fff;
+    height: 200px;
+    border-radius: 15px;
+    padding: 1rem;
+    transition:  height .2s ease;
+    box-shadow: 0 1.2em 2.5em rgba(5, 50, 99, 0.18);
+}
+.wrapper.active{
+    height: 450px;
+}
+header h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+header p{
+    margin-top: .5rem;
+    font-size: 1rem;
+    color: #474747;
+}
+.wrapper .form{
+    margin-top: 1rem;
+}
