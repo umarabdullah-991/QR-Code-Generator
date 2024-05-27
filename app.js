@@ -13,19 +13,27 @@ generateBtn.addEventListener("click", () => {
 	qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
 	wrapper.classList.add("active");
 });
+// Event listener for button click
+generateBtn.addEventListener("click", generateQRCode);
 
-// Function to handle input from user and generate QR code
-function handleUserInput(event) {
-  if (event.key === "Enter") {
-      let qrValue = qrInput.value;
-      if (!qrValue) return;
-      qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
-      wrapper.classList.add("active");
-  }
-}
+// Event listener for Enter key press
+qrInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        generateQRCode();
+    }
+});
+// // Function to handle input from user and generate QR code
+// function handleUserInput(event) {
+//   if (event.key === "Enter") {
+//       let qrValue = qrInput.value;
+//       if (!qrValue) return;
+//       qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
+//       wrapper.classList.add("active");
+//   }
+// }
 
-// Adding event listener for Enter key on the input field
-qrInput.addEventListener("keydown", handleUserInput);
+// // Adding event listener for Enter key on the input field
+// qrInput.addEventListener("keydown", handleUserInput);
 
 
 document.addEventListener("DOMContentLoaded", function() {
