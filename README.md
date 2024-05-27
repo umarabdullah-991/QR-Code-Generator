@@ -10,7 +10,7 @@ A simple web application to generate QR codes from user input. This project allo
 
 ## Demo
 
-![QR Code Generator Demo](path_to_demo_image.gif)
+[QR Code Generator Demo](<https://lets-generate-qrcode.netlify.app/>)
 
 ## Getting Started
 
