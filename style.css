@@ -13,12 +13,12 @@ body{
     background-color: rgb(94, 29, 114);
 }
 .wrapper{
-    background-color: #ffffffb2;
-    height: 200px;
+    background-color: hsla(0, 11%, 93%, 0.502);
+    height: 190px;
     border-radius: 15px;
     padding: 1rem;
-    transition:  height .2s ease;
-    box-shadow: 0 1.2em 2.5em rgba(53, 129, 210, 0.18);
+    transition:  height .3s ease;
+    box-shadow: 0 1.2em 2.5em rgba(146, 140, 140, 0.594);
 }
 .wrapper.active{
     height: 450px;
@@ -32,19 +32,21 @@ header h1{
 header p{
     margin-top: .5rem;
     font-size: 1rem;
-    color: #474747;
+    color: #000000;
 }
 .wrapper .form{
     margin-top: 1rem;
 }
 .form :where(input, button){
-    width: 80%;
+    width: 100%;
     padding: .5rem;
     margin-top: .5rem;
-    border: 1.5px solid #0d6535;
+    border: 1.5px solid #24ae62;
     border-radius: 1.5rem;
     outline: none;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 .form input{
     font-size: 15px;
@@ -53,10 +55,10 @@ header p{
 }
 .form button{
     background-color: rgb(94, 29, 114);
-    color: #bfffe1ce;
+    color: #b0d6c4c8;
     font-size: 1rem;
     cursor: pointer;
-    letter-spacing: 2.5px;
+    letter-spacing: 3.5px;
     transition: background-color .3s ease;
 }
 
@@ -65,14 +67,158 @@ header p{
     padding: 33px 0;
     opacity: 0;
     pointer-events: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     justify-content: center;
     align-items: center;
     border: 1.5px solid #0d6535;
-    margin: 10px;
+    margin: 20px;
 }
 .wrapper.active .qr-code{
     opacity: 1;
     pointer-events: all;
     transition: opacity .5s 0.05s ease;
+}
+.card {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	border: 1px solid #227c548b;
+	padding: 20px;
+	box-shadow: 0 0 1rem #d6d3d35a;
+	border-radius: 7%;
+	overflow: hidden;
+	z-index: 1000;
+	display: none;
+	text-align: left;
+	background: none;
+    height: 24vh;
+    margin: 0;
+}
+#developer-card h2{
+	color: white;
+	text-decoration: none;
+
+}
+
+/* #developer-1-link a{
+	color: white;
+	text-decoration: none;
+}  */
+.developer a{
+	font-size: 1rem;
+	color: white;
+	text-decoration: none;
+	transition: text-decoration 0.3s ease, color 0.3s ease ;
+} 
+.developer a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.hidden {
+	display: none;
+}
+  
+.visible {
+	display: block;
+}
+.developer {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+  
+.developer-photo {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.progress-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: yellow;
+	animation: progress 5s linear forwards;
+}
+  
+@keyframes progress {
+	from { width: 0; }
+	to { width: 100%; }
+}
+/* media queries */
+/* Media queries for tablet devices */
+@media (max-width: 800px) {
+    .container {
+        padding: 9rem;
+    }
+    .info-display-div {
+        width: 60rem;
+        margin-top: 4rem;
+    }
+    .info-display-div .user-info {
+        padding: 2rem;
+    }
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+	.container {
+	  padding: 2rem;
+	}
+  
+	.search-wrapper {
+	  width: 100%;
+	  margin-bottom: 1rem;
+	}
+  
+	.input-username {
+	  padding: .5rem 10rem .5rem 1.5rem;
+	}
+  
+	.btn {
+	  width: 10rem;
+	  font-size: 1.2rem;
+	}
+  
+	.info-display-div {
+	  width: 100%;
+	  margin-top: 2rem;
+	  padding: 1rem;
+	}
+  
+	.user-info {
+	  padding: 1rem;
+	}
+  
+	.repos .repo-details .items {
+	  width: 100%;
+	}
+  
+	.repo-name h3 {
+	  font-size: 1rem;
+	  margin-bottom: 1rem;
+	}
+  
+	.visit-user a {
+	  padding: 0.8rem;
+	}
+  
+	.developer-photo {
+	  width: 30px;
+	  height: 30px;
+	}
+  
+	.card {
+	  position: fixed;
+	  top: 18%;
+	  left: 33%;
+	  transform: translate(-25%, -25%);
+	  width: 90%;
+	  max-width: 300px;
+	  animation: slideIn 5s forwards; /* Add animation for card sliding in */
+	}
 }
