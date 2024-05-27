@@ -10,10 +10,10 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(94, 29, 114);
+    background-color: rgb(195, 0, 255);
 }
 .wrapper{
-    background-color: hsla(0, 11%, 93%, 0.502);
+    background-color: #fff;
     height: 190px;
     border-radius: 15px;
     padding: 1rem;
