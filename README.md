@@ -71,8 +71,9 @@ Contributions are welcome! Please follow these steps:
 6. Create a new Pull Request.
 
 **Contributors:**
-- [Umar Abdullah](<https://github.com/umarabdullah-991>)
 - [Syed Aman Shah](<https://github.com/amanxsyed>)
+- [Umar Abdullah](<https://github.com/umarabdullah-991>)
+
 
 ## License
 
