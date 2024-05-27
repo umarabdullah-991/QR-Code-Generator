@@ -116,7 +116,7 @@ button:hover{
 	z-index: 1000;
 	display: none;
 	text-align: left;
-	background: none;
+	background: linear-gradient(to left, #ca67bb, #e02cc5, #38bbdf, #0635a1);
     height: 24vh;
     margin: 0;
 }
