@@ -2,6 +2,7 @@ const wrapper = document.querySelector(".wrapper");
 const generateBtn = document.querySelector(".form button");
 const qrInput = document.querySelector(".form input");
 const qrImg = document.querySelector(".qr-code img");
+const downloadBtn = document.getElementById("downloadBtn");
 
 // Function to generate QR code
 function generateQRCode() {
@@ -35,6 +36,31 @@ qrInput.addEventListener("keydown", (event) => {
 // // Adding event listener for Enter key on the input field
 // qrInput.addEventListener("keydown", handleUserInput);
 
+
+// Function to download QR code
+function downloadQRCode() {
+  const qrSrc = qrImg.src;
+  if (!qrSrc || qrSrc === '#') return;
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('2d');
+  const img = new Image();
+  img.crossOrigin = 'Anonymous'; // to handle cross-origin issues for images from external sources
+  img.src = qrSrc;
+
+  img.onload = function() {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    context.drawImage(img, 0, 0);
+    const jpgDataUrl = canvas.toDataURL('image/jpeg');
+    const link = document.createElement('a');
+    link.href = jpgDataUrl;
+    link.download = 'qrcode.jpg';
+    link.click();
+  };
+}
+
+// Event listener for download button click
+downloadBtn.addEventListener("click", downloadQRCode);
 
 document.addEventListener("DOMContentLoaded", function() {
     const developerCard = document.getElementById("developer-card");
