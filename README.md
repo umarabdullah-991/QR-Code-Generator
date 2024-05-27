@@ -43,16 +43,6 @@ Follow these instructions to set up and run the project on your local machine.
 2. Click the "Generate QR" button.
 3. The generated QR code will be displayed below the input field.
 
-## Project Structure
-
-qr-code-generator/
-│
-├── index.html # Main HTML file
-├── style.css # CSS file for styling
-├── app.js # JavaScript file for functionality
-└── README.md # Project description
-
-
 ## Technologies Used
 
 - **HTML5**: For structuring the web page.
