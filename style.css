@@ -98,6 +98,7 @@ button:hover{
     padding: 0.5rem;
     margin-top: 10px;
     border-radius: 0.5rem;
+	border-radius: 20px;
 }
 .qr-code button:hover {
     background: linear-gradient(to left, #ca67bb, #e02cc5, #38bbdf, #0635a1);
