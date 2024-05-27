@@ -3,6 +3,7 @@ const generateBtn = document.querySelector(".form button");
 const qrInput = document.querySelector(".form input");
 const qrImg = document.querySelector(".qr-code img");
 
+
 generateBtn.addEventListener("click", () => {
     let qrValue = qrInput.value;
     // if the input value is empty then return from here
@@ -12,6 +13,21 @@ generateBtn.addEventListener("click", () => {
 	qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
 	wrapper.classList.add("active");
 });
+
+// Function to handle input from user and generate QR code
+function handleUserInput(event) {
+  if (event.key === "Enter") {
+      let qrValue = qrInput.value;
+      if (!qrValue) return;
+      qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
+      wrapper.classList.add("active");
+  }
+}
+
+// Adding event listener for Enter key on the input field
+qrInput.addEventListener("keydown", handleUserInput);
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const developerCard = document.getElementById("developer-card");
   
