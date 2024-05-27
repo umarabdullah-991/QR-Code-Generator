@@ -18,7 +18,7 @@ body{
     border-radius: 15px;
     padding: 1rem;
     transition:  height .3s ease;
-    box-shadow: 0 1.2em 2.5em rgba(146, 140, 140, 0.594);
+    box-shadow: 0 1.2em 2.5em rgba(253, 251, 251, 0.594);
 }
 .wrapper.active{
     height: 450px;
@@ -41,21 +41,22 @@ header p{
     width: 100%;
     padding: .5rem;
     margin-top: .5rem;
-    border: 1.5px solid #24ae62;
-    border-radius: 1.5rem;
-    outline: none;
+    /* border: 1.5px solid #24ae62; */
+    border-radius: 2rem;
+    /* outline-color: rgb(145, 226, 14); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .form input{
     font-size: 15px;
-    padding: 0 10px;
-    border: 1px solid hwb(133 16% 40%);
+    padding: 3px 10px;
+    border: 1px solid hwb(66 4% 2%);
+	outline-color: rgb(145, 226, 14);
 }
 .form button{
-    background-color: rgb(94, 29, 114);
-    color: #b0d6c4c8;
+    background-color: rgb(143, 33, 177);
+    color: #fffefe;
     font-size: 1rem;
     cursor: pointer;
     letter-spacing: 3.5px;
