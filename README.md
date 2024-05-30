@@ -71,9 +71,9 @@ Contributions are welcome! Please follow these steps:
 6. Create a new Pull Request.
 
 **Contributors:**
-- [Syed Aman Shah](<https://github.com/amanxsyed>)
-- [Umar Abdullah](<https://github.com/umarabdullah-991>)
 
+- [Umar Abdullah](<https://github.com/umarabdullah-991>)
+- [Syed Aman Shah](<https://github.com/amanxsyed>)
 
 ## License
 
@@ -90,4 +90,4 @@ Feel free to customize this description as per your project's needs and specific
 
 For any queries or feedback, please feel free to contact us:
 
-- **Email**: [amanxsyed@gmail.com](mailto:amanxsyed@gmail.com)
+- **Email**: [umarabdullah.work@gmail.com](mailto:umarabdullah.work@gmail.com)
